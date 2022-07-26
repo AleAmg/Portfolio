@@ -1,91 +1,101 @@
-/* import TMDB from "./../assets/TMDB.png";
+import TMDB from "./../assets/TMDB.png";
 
+import hangmanGame from "./../assets/hangmanGame.png";
+import clima from "./../assets/clima.jpg";
+import lista from "./../assets/lista.png";
+import color from "./../assets/color.jpg";
 const Proyects = () => {
   return (
-    <div className="proyects">
-      <div className="proyects-carousel">
-        <h1>Proyects</h1>
-        <div
-          id="carouselExampleCaptions"
-          className="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              className="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+    <div className="container">
+      <div className="proyects container__child">
+        <div className="proyects__image">
+          <div className="proyects__image--elem1 image__overlay">
+            <div className="overlay">
+              <p>AdFlower</p>
+              <div className="overlay--links">
+                <a href="https://github.com/AleAmg/Proyecto-Profesional_API-">
+                  Link to back-end
+                </a>
+                <a href="https://github.com/AleAmg/Proyecto-Profesional_WEB">
+                  Link to front-end
+                </a>
+              </div>
+            </div>
+            <img className="proyects__image--elem" src={TMDB} alt="TMDB"></img>
           </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src={TMDB} className="d-block w-100" alt="..."></img>
-              <div className="carousel-caption d-none d-md-block">
-                <h3>TMDB</h3>
+          <div className="proyects__image--elem2 image__overlay">
+            <div className="overlay">
+              <p>Hangman Game</p>
+              <div className="overlay--links">
+                <a href="https://github.com/AleAmg/Proyecto-Profesional_API-">
+                  Link to repository
+                </a>
               </div>
             </div>
-            <div className="carousel-item">
-              <img src={TMDB} className="d-block w-100" alt="..."></img>
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img src={TMDB} className="d-block w-100" alt="..."></img>
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
-            </div>
+            <img
+              className="proyects__image--elem"
+              src={hangmanGame}
+              alt="TMDB"
+            ></img>
           </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
+          <div className="proyects__image--elem3 image__overlay">
+            <div className="overlay">
+              <p>La tienda del buhonero</p>
+              <div className="overlay--links">
+                <a href="https://github.com/AleAmg/Proyecto-Profesional_API-">
+                  Link to repository
+                </a>
+              </div>
+            </div>
+            <img className="proyects__image--elem" src={TMDB} alt="TMDB"></img>
+          </div>
+          <div className="proyects__image--elem4 image__overlay">
+            <div className="overlay">
+              <p>TMDB</p>
+              <div className="overlay--links">
+                <a href="https://github.com/AleAmg/Proyecto-Profesional_API-">
+                  Link to repository
+                </a>
+              </div>
+            </div>
+            <img className="proyects__image--elem" src={TMDB} alt="TMDB"></img>
+          </div>
+          <div className="proyects__image--elem5 image__overlay">
+            <div className="overlay">
+              <p>Color Game</p>
+              <div className="overlay--links">
+                <a href="https://github.com/AleAmg/Proyecto-Profesional_API-">
+                  Link to repository
+                </a>
+              </div>
+            </div>
+            <img className="proyects__image--elem" src={color} alt="TMDB"></img>
+          </div>
+          <div className="proyects__image--elem6 image__overlay">
+            <div className="overlay">
+              <p>To Do List</p>
+              <div className="overlay--links">
+                <a href="https://github.com/AleAmg/Proyecto-Profesional_API-">
+                  Link to repository
+                </a>
+              </div>
+            </div>
+            <img className="proyects__image--elem" src={lista} alt="TMDB"></img>
+          </div>
+          <div className="proyects__image--elem7 image__overlay">
+            <div className="overlay">
+              <p>Weather Channel</p>
+              <div className="overlay--links">
+                <a href="https://github.com/AleAmg/Proyecto-Profesional_API-">
+                  Link to repository
+                </a>
+              </div>
+            </div>
+            <img className="proyects__image--elem" src={clima} alt="TMDB"></img>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 export default Proyects;
- */

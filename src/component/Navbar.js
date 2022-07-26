@@ -1,20 +1,17 @@
-import { Link } from "react-router-dom";
+
 import Redes from "../content/Redes";
+import NavbarLink from "../content/NavbarLink";
 
 const Navbar = () => {
   return (
     <div className="container">
-      <div className="navbar">
+      <div className="navbar container__child">
         <Redes />
-        <h1 className="navbar__name">Alexis Giozza</h1>
-        <div className="navbar__link">
-          <Link to="/">
-            <h2 className="navbar__link--text">Inicio</h2>
-          </Link>
-          <Link to="/proyectos">
-            <h2 className="navbar__link--text">Proyectos</h2>
-          </Link>
+        <div>
+          <h1 className="navbar__name">Alexis Giozza</h1>
+          <h2 className="navbar__developer" >Full stack developer</h2>
         </div>
+        <NavbarLink/>
       </div>
     </div>
   );
