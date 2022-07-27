@@ -7,9 +7,8 @@ const Redes = () => {
           <a
             className="social__link social__link--git"
             href="https://github.com/AleAmg"
-            
             target="_blank"
-              rel="noreferrer"
+            rel="noreferrer"
           >
             <AiFillGithub />
           </a>
@@ -20,9 +19,8 @@ const Redes = () => {
             className="social__link social__link--linkedIn"
             aria-hidden="true"
             href="https://www.linkedin.com/in/alexisgiozza/"
-            
             target="_blank"
-              rel="noreferrer"
+            rel="noreferrer"
           >
             <AiFillLinkedin />
           </a>

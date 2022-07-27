@@ -23,11 +23,4 @@ const NavbarLink = () => {
 };
 
 export default NavbarLink;
-/* <div className="navbar__link">
-      <Link to="/">
-        <h2 className="navbar__link--text">Inicio</h2>
-      </Link>
-      <Link to="/proyectos">
-        <h2 className="navbar__link--text">Proyectos</h2>
-      </Link>
-    </div> */
+
