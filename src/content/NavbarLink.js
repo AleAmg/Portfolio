@@ -10,8 +10,6 @@ const NavbarLink = () => {
             <AiFillHome />
           </Link>
         </li>
-      </ul>
-      <ul>
         <li className="social__icon">
           <Link to="/proyects" className="social__link social__link--proyect">
             <AiOutlineFolderOpen />
@@ -23,4 +21,3 @@ const NavbarLink = () => {
 };
 
 export default NavbarLink;
-

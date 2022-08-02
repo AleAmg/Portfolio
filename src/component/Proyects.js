@@ -13,21 +13,6 @@ const Proyects = () => {
         <div className="proyects__image">
           <div className="proyects__image--elem1 image__overlay">
             <div className="overlay">
-              <p>TMDB</p>
-              <div className="overlay--links">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/AleAmg/TMDB"
-                >
-                  Link to repository
-                </a>
-              </div>
-            </div>
-            <img className="proyects__image--elem" src={TMDB} alt="TMDB"></img>
-          </div>
-          <div className="proyects__image--elem2 image__overlay">
-            <div className="overlay">
               <p>GameOver</p>
               <div className="overlay--links">
                 <a
@@ -52,26 +37,7 @@ const Proyects = () => {
               alt="TMDB"
             ></img>
           </div>
-          <div className="proyects__image--elem3 image__overlay">
-            <div className="overlay">
-              <p>La tienda del buhonero</p>
-              <div className="overlay--links">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/AleAmg/E-commerce"
-                >
-                  Link to repository
-                </a>
-              </div>
-            </div>
-            <img
-              className="proyects__image--elem"
-              src={eCommerce}
-              alt="TMDB"
-            ></img>
-          </div>
-          <div className="proyects__image--elem4 image__overlay">
+          <div className="proyects__image--elem2 image__overlay">
             <div className="overlay">
               <p>AdFlower</p>
               <div className="overlay--links">
@@ -96,6 +62,40 @@ const Proyects = () => {
               src={adFlower}
               alt="TMDB"
             ></img>
+          </div>
+          <div className="proyects__image--elem3 image__overlay">
+            <div className="overlay">
+              <p>La tienda del buhonero</p>
+              <div className="overlay--links">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/AleAmg/E-commerce"
+                >
+                  Link to repository
+                </a>
+              </div>
+            </div>
+            <img
+              className="proyects__image--elem"
+              src={eCommerce}
+              alt="TMDB"
+            ></img>
+          </div>
+          <div className="proyects__image--elem4 image__overlay">
+            <div className="overlay">
+              <p>TMDB</p>
+              <div className="overlay--links">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/AleAmg/TMDB"
+                >
+                  Link to repository
+                </a>
+              </div>
+            </div>
+            <img className="proyects__image--elem" src={TMDB} alt="TMDB"></img>
           </div>
           <div className="proyects__image--elem5 image__overlay">
             <div className="overlay">
