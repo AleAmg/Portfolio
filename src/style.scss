@@ -365,6 +365,10 @@ body {
   .footer__container--elem {
     justify-content: space-evenly;
   }
+  .footer__elem {
+    padding: 0.1;
+    margin: 3px 4px;
+  }
   .profile {
     flex-direction: column;
   }
@@ -372,5 +376,18 @@ body {
   .profile__skills--container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media (max-width: 459px) {
+  .footer {
+    gap: 0;
+  }
+  .footer__container--elem {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .footer__elem {
+    padding: 0.1;
+    margin: 3px 3px;
   }
 }
