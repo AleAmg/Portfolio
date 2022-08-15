@@ -10,6 +10,7 @@ const Proyects = () => {
   return (
     <div className="container">
       <div className="proyects container__child">
+        <h1 className="proyects__info--title">Proyectos</h1>
         <div className="proyects__image">
           <div className="proyects__image--elem1 image__overlay">
             <div className="overlay">
