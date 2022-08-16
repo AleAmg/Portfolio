@@ -122,12 +122,21 @@ body {
   transform: perspective(1000px) rotate(0deg) skewX(315deg);
 }
 
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  background-color: #fff;
+  width: 100%;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
   height: 70px;
+  width: 90%;
 }
 .navbar__links {
   display: flex;
@@ -158,9 +167,25 @@ body {
     }
   }
 }
-.navbar__both {
+.navbar--phone {
   display: none;
 }
+.nabvar__burguer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  border: none;
+  background-color: #fff;
+  transition: 0.2s;
+  &:active {
+    font-size: 20px;
+    color: #717171;
+  }
+}
+
 .navbar__name {
   font-size: 60px;
   font-weight: 600;
@@ -186,11 +211,52 @@ body {
   }
 }
 
+.dropdown {
+  z-index: 1000;
+  
+  position: fixed;
+  left: 5%;
+  top: 95px;
+  background-color: #000;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  animation: open 1s ;
+}
+@keyframes open {
+  0%{
+    transform: scaleY(0);
+    top: 0;
+  }
+  100%{
+    transform: scaleY(1);
+    top: 95px
+  }
+}
+.dropdown__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  border: 1px solid #fff;
+  border-top: 0;
+}
+.dropdown__link--item {
+  color: rgb(193, 0, 193);
+  text-decoration: none;
+  font-size: 30px;
+}
 .profile {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
+
 .profile__container--img {
   width: 401px;
   height: 410px;
@@ -380,9 +446,7 @@ body {
 }
 
 .contactMe__child {
-  max-width: 500px;
-  width: 100%;
-  
+  width: 500px;
   height: 40px;
   border-radius: 10px;
   font-size: 20px;
@@ -394,7 +458,6 @@ body {
   height: 80px;
 }
 .contactMe__button {
-  position: relative;
   width: 200px;
   height: 30px;
   padding: 0;
@@ -410,12 +473,14 @@ body {
 }
 
 @media (max-width: 767px) {
-  .navbar__origin {
+  .navbar--computer {
     display: none;
   }
-  .navbar__both {
-    display: block;
+
+  .navbar--phone {
+    display: flex;
   }
+
   .navbar__name {
     margin: 5px;
   }
@@ -456,6 +521,9 @@ body {
   }
   .contactMe {
     flex-direction: column;
+  }
+  .contactMe__child {
+    width: 300px;
   }
 }
 @media (max-width: 459px) {

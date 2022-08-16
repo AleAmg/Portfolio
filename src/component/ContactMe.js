@@ -1,6 +1,6 @@
 const ContactMe = () => {
   return (
-    <div className="container">
+    <div className="container" id="contact">
       <div className="container__child contactMe">
         <h1 className="contactMe__title">Contact Me</h1>
         <form

@@ -14,7 +14,7 @@ import github from "./../assets/logos/github-icon.svg";
 const Skills = () => {
   return (
     <div>
-      <h1>Skills</h1>
+      <h1 className="proyects__info--title">Skills</h1>
       <div className="profile__skills--container">
         <img className="profile__skills" src={html} alt="html"></img>
         <img className="profile__skills" src={css} alt="css"></img>

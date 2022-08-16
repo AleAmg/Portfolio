@@ -8,7 +8,7 @@ import adFlower from "./../assets/images/adFlower.png";
 
 const Proyects = () => {
   return (
-    <div className="container">
+    <div className="container" id="proyects">
       <div className="proyects container__child">
         <h1 className="proyects__info--title">Proyectos</h1>
         <div className="proyects__image">
