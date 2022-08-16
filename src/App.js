@@ -10,9 +10,8 @@ import ContactMe from "./component/ContactMe";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Navbar />
-      
       <Profile />
       <Proyects />
       <ContactMe />

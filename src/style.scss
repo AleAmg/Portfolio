@@ -16,6 +16,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to top, #ededed 0%, #000 50%, #ededed 100%);
 }
+
 .container {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
   padding-bottom: 25px;
@@ -141,7 +142,7 @@ body {
 .navbar__links {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   padding-top: 10px;
 }
 .navbar__links--item {
@@ -189,7 +190,7 @@ body {
 .navbar__name {
   font-size: 60px;
   font-weight: 600;
-  text-shadow: 10px 10px 5px #a3a3a3;
+  
 }
 .navbar__developer {
   text-decoration: underline;
@@ -213,17 +214,15 @@ body {
 
 .dropdown {
   z-index: 1000;
-  
   position: fixed;
   left: 5%;
   top: 95px;
   background-color: #000;
   width: 90%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
   animation: open 1s ;
 }
 @keyframes open {
@@ -254,7 +253,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .profile__container--img {
@@ -269,7 +268,6 @@ body {
 
 .profile__image {
   width: 400px;
-
   cursor: pointer;
   border-radius: 50%;
   object-fit: cover;
@@ -317,8 +315,12 @@ body {
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
+.proyects{
+  padding-top: 100px;
+}
 .proyects__info--title {
   font-size: 60px;
+  margin-top: 5px;
 }
 .proyects__image {
   display: grid;
@@ -483,6 +485,9 @@ body {
 
   .navbar__name {
     margin: 5px;
+  }
+  .dropdown{
+    display: flex;
   }
   .proyects__image {
     grid-template-columns: repeat(1, 1fr);
