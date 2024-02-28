@@ -7,6 +7,7 @@ import Proyects from "./component/Proyects";
 import Footer from "./component/Footer";
 
 import ContactMe from "./component/ContactMe";
+import Eyes from "./content/Eyes";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Proyects />
       <ContactMe />
       <Footer />
+      <Eyes str="d"/>
     </div>
   );
 }
