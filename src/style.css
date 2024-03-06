@@ -24,6 +24,11 @@ body {
   background-image: linear-gradient(to top, #ededed 0%, #000 50%, #ededed 100%);
 }
 
+.app {
+  position: absolute;
+  width: 100%;
+}
+
 .container {
   -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
           box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
@@ -90,14 +95,14 @@ body {
 .navbar__links--item a {
   font-size: 28px;
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
   padding: 2px;
 }
 
 .navbar__links--item span {
   width: 100%;
   height: 3px;
-  background-color: #000;
+  background-color: #ffffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: scaleX(0);
@@ -114,6 +119,7 @@ body {
 }
 
 .nabvar__burguer {
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,7 +133,7 @@ body {
   height: 50px;
   font-size: 40px;
   border: none;
-  background-color: #fff;
+  background-color: #1d1d1d;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -168,7 +174,7 @@ body {
   position: fixed;
   left: 5%;
   top: 95px;
-  background-color: #000;
+  background-color: #ffffff;
   width: 90%;
   display: none;
   -webkit-box-pack: center;
@@ -275,7 +281,9 @@ body {
     transform: perspective(1000px) rotateX(25deg) rotateY(-30deg);
 } */
 .profile__image {
-  width: 290px;
+  max-width: 290px;
+  min-width: 210px;
+  width: 100%;
   cursor: pointer;
   /*  object-fit: cover; */
   /* &:hover {
@@ -554,6 +562,7 @@ body {
 }
 
 .container__eyes {
+  margin-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,6 +573,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100px;
+  position: fixed;
+  z-index: -1;
 }
 
 .eye {
@@ -578,35 +589,107 @@ body {
           justify-content: center;
   background-color: #615901;
   margin: 20px;
-  width: 40px;
-  height: 29px;
   border-radius: 50%;
 }
 
+.eye__brillo--g {
+  background-color: #fff;
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+.eye__brillo--c {
+  background-color: #fff;
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  margin-left: 53%;
+}
+
 .eye__pupila--e {
-  height: 21px;
-  width: 21px;
   background-color: #000;
-  border-radius: 50% 0;
+  border-radius: 100% 0;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 
+.eye__pupila--e--s {
+  height: 21px;
+  width: 21px;
+}
+
+.eye__pupila--e--m {
+  height: 31px;
+  width: 31px;
+}
+
+.eye__pupila--e--l {
+  height: 44px;
+  width: 44px;
+}
+
 .eye__pupila--d {
-  height: 30px;
-  width: 30px;
   background-color: #000;
   border-radius: 50%;
+}
+
+.eye__pupila--d--s {
+  height: 30px;
+  width: 30px;
+}
+
+.eye__pupila--d--m {
+  height: 40px;
+  width: 40px;
+}
+
+.eye__pupila--d--l {
+  height: 60px;
+  width: 60px;
 }
 
 .eye__pupila--f {
-  height: 29px;
-  width: 6px;
   background-color: #000;
   border-radius: 50%;
 }
 
+.eye__pupila--f--s {
+  height: 29px;
+  width: 6px;
+}
+
+.eye__pupila--f--m {
+  height: 39px;
+  width: 10px;
+}
+
+.eye__pupila--f--l {
+  height: 59px;
+  width: 14px;
+}
+
+.talle--s {
+  width: 40px;
+  height: 29px;
+}
+
+.talle--m {
+  width: 60px;
+  height: 39px;
+}
+
+.talle--l {
+  width: 80px;
+  height: 58px;
+}
+
 @media (max-width: 767px) {
+  .profile_info {
+    width: 90%;
+  }
   .navbar--computer {
     display: none;
   }

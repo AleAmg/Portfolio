@@ -14,7 +14,7 @@ const DropDown = () => {
       </div>
       <div className="dropdown__link">
         <a className="dropdown__link--item" href="#contact">
-          Contact me
+          Contactame
         </a>
       </div>
     </div>

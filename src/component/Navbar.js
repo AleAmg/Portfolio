@@ -27,7 +27,7 @@ const Navbar = () => {
               <span></span>
             </div>
             <div className="navbar__links--item">
-              <a href="#contact">Contact me</a>
+              <a href="#contact">Contactame</a>
               <span></span>
             </div>
           </div>

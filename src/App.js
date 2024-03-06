@@ -12,12 +12,15 @@ import Eyes from "./content/Eyes";
 function App() {
   return (
     <div className="app">
+      <div className="eye-1">
+        <Eyes str="e" talle="l" />
+      </div>
+
       <Navbar />
       <Profile />
       <Proyects />
       <ContactMe />
       <Footer />
-      <Eyes str="d"/>
     </div>
   );
 }
